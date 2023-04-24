@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ProfileCard from './component/ProfileCard';
 
-function App() {
+const App = () => {
+  const users = [
+    {
+      name: 'Sumit Kumar',
+      designation: 'Software Developer',
+      jobDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      imageSrc: 'https://www.kindpng.com/picc/m/497-4973038_profile-picture-circle-png-transparent-png.png'
+    },
+    {
+      name: 'Abhishek Kumar',
+      designation: 'Product Manager',
+      jobDescription: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      imageSrc: 'https://www.kindpng.com/picc/m/497-4973038_profile-picture-circle-png-transparent-png.png'
+    },
+    {
+      name: 'Nidhi Panday',
+      designation: 'Sales Executive',
+      jobDescription: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      imageSrc: 'https://www.kindpng.com/picc/m/497-4973038_profile-picture-circle-png-transparent-png.png'
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {users.map((user, index) => (
+        <ProfileCard
+          key={index}
+          name={user.name}
+          designation={user.designation}
+          jobDescription={user.jobDescription}
+          imageSrc={user.imageSrc}
+        />
+      ))}
     </div>
   );
-}
+};
 
 export default App;
