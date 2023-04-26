@@ -1,0 +1,29 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 50vh;
+    width: 30vw;
+    margin-top: 50px;
+    margin-left: 500px;
+    border-radius: 20px;
+}
+.nameText{
+    background-color: rgb(74, 232, 66);
+    height: 30px;
+    width: 200px;
+    margin: 10px;
+}
+.fname{
+    font-size: 20px;
+}
+.nameSubmit{
+    background-color: rgb(4, 54, 219);
+    height: 40px;
+    width: 220px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
