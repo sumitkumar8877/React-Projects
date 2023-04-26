@@ -1,0 +1,25 @@
+.image{
+    height: 180px;
+    width: 180px;
+  
+}
+.main1{
+   display: flex;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.main2{
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+    justify-content: center;
+    height: 55vh;
+    width: 20vw;
+}
+.btn{
+    background-color: rgb(209, 110, 110);
+    padding: 6px;
+}
